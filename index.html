@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Limbaga Band Website</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+    <nav class="w3-bar w3-black">
+        <a href="#home" class="w3-button w3-bar-item">Home</a>
+
+      </nav>
+
+
+ <!-- SlideShow -->
+<section>
+    <img class="mySlides" src="Linkin Park.jpg"
+    style="width:100%">
+    <img class="mySlides" src="Linkin Park2.jpg"
+    style="width:100%">
+    <img class="mySlides" src="Linkin Park3.jpg"
+    style="width:100%">
+  </section>
+  
+  <section class="w3-container w3-center w3-content" style="max-width:600px">
+    <h2 class="w3-wide">LINKIN PARK</h2>
+    <p class="w3-opacity"><i>We love music</i></p>
+    <p class="w3-justify">Linkin Park, a California-based rock band formed in 1996, rose to global prominence with their debut album, "Hybrid Theory," released in 2000. Characterized by a fusion of rock, nu-metal, and electronic elements, the band's dynamic sound, led by the distinctive vocals of Chester Bennington and Mike Shinoda's rapping, struck a chord with a wide audience. Hits like "In the End" and "Crawling" showcased their ability to blend emotional lyrics with powerful instrumentals. Over the years, Linkin Park's musical evolution, reflected in albums like "Meteora" and "Minutes to Midnight," solidified their place as one of the most influential bands of the 2000s. The tragic loss of Chester Bennington in 2017 left an indelible mark on the group, but Linkin Park's impact endures, with their genre-spanning music continuing to resonate with fans worldwide.</p>
+  </section>
+
+
+<section class="w3-row-padding w3-center w3-light-grey">
+    <article class="w3-third">
+      <p>Joe Hahn</p>
+      <img src="Joe Hahn.jpg" alt="Joe Hahn" style="width:100%; height: 102.9vh;">
+      <p>Joe Hahn is the American Musician and D.J</p>
+    </article>
+    <article class="w3-third">
+      <p>Chester Benningston</p>
+      <img src="Chester Benningston.jpg" alt="Chester Benningston" style="width:100%; height: 102.9vh;">
+      <p>Chester Benningston is the Vocalist.</p>
+    </article>
+    <article class="w3-third">
+      <p>Rob Bourdon</p>
+      <img src="Rob Bourdon.jpg" alt="Rob Bourdon" style="width:100%; height: 102.9vh;">
+      <p>Rob Bourdon is the Drummer.</p>
+    </article>
+  </section>
+
+  <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="https://www.facebook.com/linkinpark"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.pinterest.ph/linkinpark/"><i class="fa fa-pinterest-p"></i></a>
+  <a href="https://twitter.com/linkinpark"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.flickr.com/groups/linkinpark/pool/"><i class="fa fa-flickr"></i></a>
+  <a href="https://www.linkedin.com/company/linkin-park"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Thanks to <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+    </script>
+</body>
+</html>
